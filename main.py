@@ -14,7 +14,7 @@ app = FastAPI(title="Rezolvator ecuatie de gradul 2")
 # Permite cereri doar de la frontend-ul React (Vite implicit pe 5173)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["https://quadratic-equation-frontend.vercel.app","http://localhost:5173"],
     allow_methods=["POST"],
     allow_headers=["*"],
 )
